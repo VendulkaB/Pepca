@@ -3,7 +3,7 @@ body {
     font-family: 'Orbitron', sans-serif; /* Cyberpunk font */
     margin: 0;
     padding: 0;
-    background: linear-gradient(45deg, #0d0d0d, #1f1f1f, #4b0082);
+    background: linear-gradient(45deg, #0d0d0d, #001f3f, #004d40);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,10 +17,10 @@ body {
     text-align: center;
     width: 90%;
     max-width: 800px;
-    background: rgba(20, 20, 20, 0.95);
-    border: 5px solid #ff4081;
+    background: rgba(10, 20, 30, 0.95);
+    border: 5px solid #00e676;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 5px #03a9f4, 0px 0px 10px #ff4081 inset;
+    box-shadow: 0px 0px 20px 5px #00b0ff, 0px 0px 10px #00e676 inset;
     overflow: hidden;
     position: relative;
     padding: 10px;
@@ -29,18 +29,18 @@ body {
 /* Fotografie */
 .photo-container {
     width: 100%;
-    max-height: 350px;
+    max-height: 400px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 3px solid #00b0ff;
 }
 
 .birthday-photo {
     width: 100%;
     height: auto;
-    max-height: 350px;
-    border-bottom: 3px solid #03a9f4;
+    max-height: 400px;
     animation: photo-highlight 8s infinite alternate ease-in-out;
 }
 
@@ -53,8 +53,8 @@ body {
 .birthday-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #ff4081;
-    text-shadow: 2px 2px 10px #03a9f4, -2px -2px 10px #ff4081;
+    color: #00e676;
+    text-shadow: 2px 2px 10px #00b0ff, -2px -2px 10px #00e676;
     animation: glow-text 3s infinite alternate;
 }
 
@@ -64,9 +64,9 @@ body {
 }
 
 .highlight {
-    color: #03a9f4;
+    color: #00b0ff;
     font-weight: bold;
-    text-shadow: 1px 1px 5px #ff4081;
+    text-shadow: 1px 1px 5px #00e676;
 }
 
 .confirmation {
@@ -76,7 +76,7 @@ body {
 
 .phone-number {
     font-size: 1.5rem;
-    color: #76c7c0;
+    color: #00e676;
     font-weight: bold;
     animation: blink 1.5s infinite;
 }
@@ -97,8 +97,8 @@ body {
     font-size: 1rem;
     font-weight: bold;
     color: #000;
-    background: linear-gradient(45deg, #03a9f4, #ff4081);
-    box-shadow: 0px 5px 15px rgba(255, 64, 129, 0.5), inset 0px 2px 5px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(45deg, #00b0ff, #00e676);
+    box-shadow: 0px 5px 15px rgba(0, 224, 118, 0.5), inset 0px 2px 5px rgba(0, 0, 0, 0.5);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     text-align: center;
     min-width: 40%;
@@ -106,14 +106,14 @@ body {
 
 .confirm-button:hover, .share-button:hover {
     transform: scale(1.1);
-    box-shadow: 5px 5px 20px rgba(255, 64, 129, 0.8), inset 0px 5px 15px rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 5px 20px rgba(0, 224, 118, 0.8), inset 0px 5px 15px rgba(0, 0, 0, 0.7);
 }
 
 /* Odpočet času */
 .countdown-timer {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ff4081;
+    color: #00e676;
     margin-top: 20px;
 }
 
@@ -124,20 +124,20 @@ body {
 }
 
 @keyframes glow-text {
-    0% { text-shadow: 2px 2px 10px #03a9f4, -2px -2px 10px #ff4081; }
-    100% { text-shadow: 4px 4px 20px #03a9f4, -4px -4px 20px #ff4081; }
+    0% { text-shadow: 2px 2px 10px #00b0ff, -2px -2px 10px #00e676; }
+    100% { text-shadow: 4px 4px 20px #00b0ff, -4px -4px 20px #00e676; }
 }
 
 @keyframes blink {
-    0% { color: #76c7c0; }
-    50% { color: #ff4081; }
-    100% { color: #76c7c0; }
+    0% { color: #00e676; }
+    50% { color: #00b0ff; }
+    100% { color: #00e676; }
 }
 
 /* Mobilní optimalizace */
 @media (max-width: 768px) {
     .photo-container {
-        max-height: 250px;
+        max-height: 300px;
     }
 
     .birthday-title {
