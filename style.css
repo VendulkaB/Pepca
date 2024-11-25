@@ -20,7 +20,7 @@ body {
     background: rgba(10, 20, 30, 0.95);
     border: 5px solid #00e676;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 5px #00b0ff, 0px 0px 10px #00e676 inset;
+    box-shadow: 0px 0px 20px 5px #00b0ff, 0px 0px 10px #004d40 inset;
     overflow: hidden;
     position: relative;
     padding: 10px;
